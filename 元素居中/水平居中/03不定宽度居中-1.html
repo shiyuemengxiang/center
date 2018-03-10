@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>不定宽度table+margin</title>
+		<style>
+						/*不定宽-1*/
+			.box2{
+				background: deepskyblue;
+			}
+			.box2>.son{
+				display:table;/*默文本宽度为不定宽的定宽*/
+				margin: 50px auto;
+				background: deeppink;
+				/*padding:50px;可以使用padding调整内部空隙*/
+			}
+			/*不定宽-2*/
+			.box3{
+				background: pink;
+					text-align: center;
+			}
+			.box3>.son{
+				display: inline-block;
+				background: aquamarine;
+			}
+		</style>
+	</head>
+	<body>
+			<!--不定宽度使用display:table+margin-->
+		<div class="box2">
+			<div class="son">我是不定宽度水平居中</div>
+		</div>
+		<!--不定宽度第二种方式居中inline-block(子)+text-align(父)-->
+		<div class="box3">
+			<div class="son">不定宽度第二种居中</div>
+		</div>
+	</body>
+</html>

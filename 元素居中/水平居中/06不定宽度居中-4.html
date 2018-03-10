@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>不定宽度元素居中float+relative</title>
+		<style>
+			.box{
+   				 float:left;
+    			position:relative;
+    			left:50%
+			}
+			.box>.son{
+				background:deeppink;
+    			position:relative;
+    			left:-50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="son">float+relative也能居中</div>
+		</div>
+	</body>
+</html>

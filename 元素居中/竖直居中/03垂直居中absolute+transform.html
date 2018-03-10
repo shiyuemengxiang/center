@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>父元素高度不确定的多行文本</title>
+		<style>
+		.row{
+			background: #00BFFF;
+			height:180px;
+			position: relative;
+		}
+		span{
+			background: #FF1493;
+			position: absolute;
+			top:50%;
+			transform:translateY(-50%);
+		}
+		</style>
+	</head>
+	<body>
+		<!--absolute+tranlate-->
+		<div class="row">
+			<span>我是垂直居中显示我是垂直居中显示我是垂直居中显示</span>
+		</div>
+	</body>
+</html>
